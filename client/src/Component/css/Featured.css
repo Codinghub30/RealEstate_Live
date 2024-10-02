@@ -1,0 +1,220 @@
+.main{
+    margin-top: 3%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.seeAll1 button{
+    position: absolute;
+    font-size: 18px;
+    color: #0d0d98;
+    left: 84%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+  
+  .highlight {
+    color: #ff9800;
+  }
+  
+
+
+  
+ .button-line {
+    position: absolute;
+    /* bottom: -78%; */
+    margin-top: -10px;
+
+    left: 41%;
+    transform: translateX(-50%);
+    width: 66px;
+    height: 4px;
+    background-color: #ff9800;
+  } 
+
+  .button-line-2 {
+    position: absolute;
+    margin-top: -10px;
+    left: 31%;
+    transform: translateX(-50%);
+    width:  70px;
+    height: 4px;
+    background-color: #ff9800;
+  } 
+
+
+  /* .button-line {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 20%;
+    background-color: #ff9800;
+    
+
+  } */
+
+.highlight{
+    font-size: 4.2rem;
+    color: red;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .card-container {
+    display: flex;
+    gap: 16%;
+    margin-left: 4%;
+    margin-top: 7%;
+  }
+  
+  .card {
+    width: 350px;
+    margin: 0 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+  }
+  
+  .card-image {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .card-content {
+    padding: 10px 0;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+
+  /* popular */
+
+  .seeAll button{
+    position: absolute;
+    font-size: 18px;
+    color: #0d0d98;
+    left: 84%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+  }
+
+  .popular{
+    margin-top: 10%;
+  }
+  .card-container{
+    
+  }
+
+ /* CardCarousel.css */
+ .bbsr{
+    color: #1b1b6e  ;
+ }
+ .l{
+    font-size: 4rem;
+    color: red;
+ }
+ .card-carousel {
+    margin-top: 20px;
+    width: 90%;
+    margin: auto;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    background: #fff;
+  }
+  
+  .card-image {
+    height: 150px;
+    background: #f0f0f0;
+    margin-bottom: 10px;
+  }
+  
+  .card-details h2 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .card-details p {
+    margin: 5px 0;
+  }
+
+  .slick-track{
+    margin-top: 72px;
+  }
+
+  .slick-arrow button{
+    display: block;
+    color: #cb1717;
+    background-color: #0000009c;
+  }
+
+  .slick-prev, .slick-next { 
+    display: block;
+    color: #cb1717 !important;
+    background-color: #0000009c !important;
+  }
+
+  @media (max-width: 850px){
+    .card-container {
+      margin-top: 44%;
+  }
+  .button-line {
+    position: absolute;
+    bottom: -6px;
+    left: 10%;
+    transform: translateX(-50%);
+    width: 66px;
+    height: 4px;
+    background-color: #ff9800;
+}
+
+.feature-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+  .seeAll button{
+    width: 44%;
+    margin-top: 4%;
+    left: 48%;
+  }
+  .button-line-2 {
+    top: 232%;
+    left: 26%;
+  }
+
+  .seeAll1 button{
+    left: 58%;
+    margin-top: 14%;
+
+  }
+  }

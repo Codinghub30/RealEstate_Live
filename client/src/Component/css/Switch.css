@@ -1,0 +1,142 @@
+/* src/Component/css/Switch.css */
+
+.feature-heading {
+    margin-top: 8%;
+    margin-left: -1%;
+    font-size: 1.5rem; /* Size of the heading */
+    font-weight: 600; /* Make the text bold */
+    color: #333; /* Dark color for the text */
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    text-transform: uppercase; /* Make the text uppercase */
+    letter-spacing: 1px; /* Space between letters */
+}
+
+.button-section {
+    display: flex;
+    gap: 10%;
+    margin-top: 3%;
+    margin-left: 28%;
+}
+
+.button1, .button2 {
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.button1:hover, .button2:hover {
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+
+.button1::after, .button2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; /* Thickness of the underline */
+    background: #ddd; /* Light color for the underline */
+    transition: background-color 0.3s ease;
+}
+
+.button1:hover::after, .button2:hover::after {
+    background: #007bff; /* Change color on hover */
+}
+
+.button1.active::after, .button2.active::after {
+    background: #007bff; /* Color when button is active */
+}
+
+/* Card styles */
+.feature-container {
+    display: flex;
+    margin-top: 5%;
+}
+
+.card-initial {
+    display: flex;
+    position: relative;
+    width: 300px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 16px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    color: #fff;
+    text-align: center;
+}
+
+.card-content-initial {
+    position: relative;
+    z-index: 1; /* Ensure content is above the gradient */
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+/* Gradient overlay */
+.card-initial::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40%; /* Adjust height as needed */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent); /* Black gradient */
+    z-index: 0; /* Place gradient behind content */
+}
+
+.card-title-initial {
+    z-index: 1;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.card-description-initial {
+    margin: 8px 0;
+    font-size: 1em;
+}
+
+.card-button-initial {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.card-button-initial:hover {
+    background-color: #0056b3;
+}
+
+
+@media (max-width: 800px){
+    .button-section {
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+        margin-top: 3%;
+        margin-left: 0%;
+    }
+
+    .feature-heading {
+        margin-top: 24%;
+        
+    }
+
+    .feature-container {
+        display: flex;
+        margin-top: 5%;
+    }
+    
+}

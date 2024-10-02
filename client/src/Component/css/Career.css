@@ -1,0 +1,138 @@
+/* Career.css */
+
+.container-career {
+    padding: 20px;
+  }
+  
+  .image-main-career {
+    width: 99vw;
+    height: 70vh;
+    margin-top: -2%;
+    margin-left: -2%;
+  }
+  
+  .life {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .life img {
+    width: 100%;
+    max-width: 600px; /* Adjust based on your layout */
+    height: auto;
+    margin-top: 10px;
+  }
+  
+  .benefit {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .benefit-heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .benefit-para {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  
+  .icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 87px;
+  }
+  
+  .icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    position: relative; /* For positioning the line */
+  }
+  
+  /* Vertical line between icon items */
+  .icon-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -36px; /* Adjust spacing for the line */
+    width: 1px; /* Line thickness */
+    background-color: black; /* Line color */
+  }
+  
+  .icon-item img {
+    width: 50px; /* Adjust size as needed */
+    height: 80px; /* Adjust size as needed */
+    object-fit: contain;
+    margin-bottom: 10px; /* Space between icon and heading */
+  }
+  
+  .icon-item h2 {
+    font-size: 12px;
+    margin: 0; /* Remove default margin */
+  }
+  
+  .core-heading{
+    margin-left: 41%;
+    margin-top: 7%;
+  }
+
+  .core-para{
+    margin-top: 40px;
+    margin-left: 26%;
+    margin-right: 25%;
+  }
+
+
+
+  .career-form-section {
+    width: 36%;
+    background-color: white;
+    font-size: 14px;
+    padding: 20px;
+    margin-top: 6%;
+    margin-left: 33%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  .career-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .career-form label {
+    margin: 10px 0 5px;
+  }
+  
+  .career-form input, .career-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .career-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .submit-button-career{
+    width: 21%;
+    margin-left: 40%;
+  }
+  
+  .career-form button:hover {
+    background-color: #0056b3;
+  }
+  
