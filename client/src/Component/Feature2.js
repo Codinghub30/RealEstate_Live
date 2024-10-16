@@ -1,28 +1,38 @@
 // src/Feature.js
 import React from "react";
+import apart5 from './Images/apart5.jpg';
+import apart6 from './Images/apart6.jpg';
+import plot5 from './Images/plot5.jpg';
+import plot6 from './Images/plot6.jpg';
+import plot7 from './Images/plot7.jpg';
 // import "./Feature.css"; // Import the CSS file for styling
 
 const Feature2 = () => {
   const data = [
     {
-      image: "https://via.placeholder.com/300x200",
-      PropName: "Name5",
-      location: "Location1",
+      image: plot5,
+      PropName: "Green Acres Plot",
+      location: "Patrapada",
     },
     {
-      image: "https://via.placeholder.com/300x200",
-      PropName: "Name6",
-      location: "Location2",
+      image: apart6,
+      PropName: "Sunset Meadows",
+      location: "Kalinga Vihar",
     },
     {
-      image: "https://via.placeholder.com/300x200",
-      PropName: "Name7",
-      location: "Location3",
+      image: apart5,
+      PropName: "Ocean Breeze Apartments",
+      location: "Jaydev Vihar",
     },
     {
-      image: "https://via.placeholder.com/300x200",
-      PropName: "Name8",
-      location: "Location4",
+      image: plot6,
+      PropName: "Shanti Vihar Plot",
+      location: "Rasulgarh",
+    },
+    {
+      image: plot7,
+      PropName: "section 35",
+      location: "Bhubaneswar-Puri Road",
     },
   ];
 

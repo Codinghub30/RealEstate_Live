@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../Component/Header";
 import img from "../Component/Images/career.jpg";
+import img1 from "../Component/Images/img1.jpg";
 import Money from "../Component/Images/money.png";
 import Health from "../Component/Images/Health.png";
 import Good from "../Component/Images/Good.png";
@@ -9,6 +10,8 @@ import Integrity from "../Component/Images/Integrity.png";
 import Innovative from "../Component/Images/Innovative.png";
 import Teamwork from "../Component/Images/Teamwork.png";
 import Usercetric from "../Component/Images/Usercetric.png";
+import { RiDoubleQuotesL } from "react-icons/ri";
+import { RiDoubleQuotesR } from "react-icons/ri";
 import "../Component/css/Career.css";
 import Footer from "../Component/Footer";
 
@@ -17,19 +20,18 @@ const Career = () => {
     <div>
       <Header />
       <div className="container-career">
-        <img className="image-main-career" src={img} alt="Not Found" />
+        <div className="main-Img">
+       
+          <div className="career-overlay-text">Join Our Team!</div>
+        </div>
         <div className="life">
           <h2>Life At #MPC</h2>
           <p>
-            At Square Yards, supporting our employees is a core part of how we
-            do business. We believe in a wholesome individual and team balance
-            and thus emphasize absolute autonomy at all levels, along with
-            celebrating the process of achieving individual and group goals. We
-            are proud of our supportive and inclusive culture that nurtures the
-            creative side of our employees. We thus encourage indulgence in
-            de-stressing and rejuvenating activities at work.
+          <RiDoubleQuotesL style={{fontSize:"26px", marginTop:"-36px"}} />
+          At MPC Real Estate, supporting our employees is a core part of how we do business. We believe in fostering a wholesome individual and team balance, emphasizing absolute autonomy at all levels while celebrating the process of achieving both individual and group goals. We take pride in our supportive and inclusive culture that nurtures the creative side of our employees. Therefore, we encourage engagement in de-stressing and rejuvenating activities at work.
+            <RiDoubleQuotesR  style={{fontSize:"26px", marginTop:"10px"}}  />
           </p>
-          <img src={img} alt="Not Found" />
+          <img src={img1} alt="Not Found" />
         </div>
 
         <div className="benefit">

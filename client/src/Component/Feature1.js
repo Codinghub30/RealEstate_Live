@@ -1,28 +1,32 @@
 // src/Feature.js
 import React from "react";
 // import "./Feature.css"; // Import the CSS file for styling
+import apart3 from './Images/apart3.jpg';
+import apart4 from './Images/apart4.jpg';
+import plot1 from './Images/plot1.jpg';
+import plot2 from './Images/plot2.jpg';
 
 const Feature1 = () => {
   const data = [
     {
-      image: "https://via.placeholder.com/300x200",
-      PropName: "Name9",
-      location: "Location1",
+      image: apart3,
+      PropName: "Oceanview Enclave",
+      location: "Kalinga Nagar",
     },
     {
-      image: "https://via.placeholder.com/300x200",
-      PropName: "Name10",
-      location: "Location2",
+      image: plot1,
+      PropName: "Shree Vihar Estate",
+      location: "Shree Vihar",
     },
     {
-      image: "https://via.placeholder.com/300x200",
-      PropName: "Name11",
-      location: "Location3",
+      image: plot2,
+      PropName: "Harmony Greens Plot",
+      location: "Mancheswar",
     },
     {
-      image: "https://via.placeholder.com/300x200",
-      PropName: "Name12",
-      location: "Location4",
+      image: apart4,
+      PropName: "Royal Orchid Residences",
+      location: "Jaydev vihar",
     },
   ];
 

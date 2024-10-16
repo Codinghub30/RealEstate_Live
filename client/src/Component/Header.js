@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import Dropdown from "react-bootstrap/Dropdown";
-import img from "../Component/Images/MPC.png"
+import img from "../Component/Images/MPC.png";
+import "./css/Header.css";
+import { HiOutlineSquares2X2 } from "react-icons/hi2";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,17 +21,18 @@ const Header = () => {
           <img src={img} alt="Not found" />
         </div>
         <nav className={`navigation ${isOpen ? "nav-active" : ""}`}>
+          <div className="close-btn" onClick={closeMenu}>
+            &times;
+          </div>
           <ul className="nav-list">
             <li className="nav-item">
               <a href="/" onClick={closeMenu}>Home</a>
-            </li> 
+            </li>
             <li className="nav-item">
               <a href="/about" onClick={closeMenu}>About</a>
             </li>
-   
-           
-           <li className="nav-item">
-              <a href="/services" onClick={closeMenu}>Service</a>
+            <li className="nav-item">
+              <a href="/services" onClick={closeMenu}>Services</a>
             </li>
             <li className="nav-item">
               <a href="/contact" onClick={closeMenu}>Contact</a>
@@ -41,9 +43,7 @@ const Header = () => {
           </ul>
         </nav>
         <div className="menu-icon" onClick={toggleMenu}>
-          <span></span>
-          <span></span>
-          <span></span>
+        <HiOutlineSquares2X2 />
         </div>
       </div>
     </header>

@@ -1,28 +1,33 @@
 // src/Feature.js
 import React from "react";
 // import "./Feature.css"; // Import the CSS file for styling
+import img1 from './Images/services13.jpg';
+import apart1 from './Images/apart1.jpg';
+import apart2 from './Images/Apart2.jpg';
+import plot1 from './Images/plot1.jpg';
+
 
 const Feature = () => {
   const data = [
     {
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjfEVWVqmdR82XU2f9eUuDJ_NMbmamzi0TZQ&s",
-      PropName: "Name1",
-      location: "Location1",
+      image: img1,
+      PropName: "Spring Plot",
+      location: "Patia",
     },
     {
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjfEVWVqmdR82XU2f9eUuDJ_NMbmamzi0TZQ&s",
-      PropName: "Name2",
-      location: "Location2",
+      image: plot1,
+      PropName: "Greenfield Estate",
+      location: "Khorda",
     },
     {
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjfEVWVqmdR82XU2f9eUuDJ_NMbmamzi0TZQ&s",
-      PropName: "Name3",
-      location: "Location3",
+      image: apart1,
+      PropName: "Apartment in Chandrasekarpur",
+    location: "Chandrasekarpur",
     },
     {
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjfEVWVqmdR82XU2f9eUuDJ_NMbmamzi0TZQ&s",
-      PropName: "Name4",
-      location: "Location4",
+      image: apart2,
+      PropName: "Apartment in Laxmisagar",
+      location: "Laxmisagar",
     },
   ];
 

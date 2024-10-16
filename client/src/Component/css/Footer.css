@@ -1,94 +1,190 @@
 /* Footer.css */
 
+/* General footer styling */
 .footer {
-    background-color: #333;
-    margin-top: 100px;
-    color: #fff;
-    padding: 40px 0;
-  }
-  
+  background-color: rgba(66, 66, 190, 0.824);
+  margin-top: 100px;
+  color: #fff;
+  padding: 40px 0;
+  border-radius: 8px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 220px;
+  margin: 20px 0;
+}
+
+.footer-column h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #00aced;
+}
+
+.social-media li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.social-media li a {
+  display: flex;
+  align-items: center;
+}
+
+.social-media li a i {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.footer-column form {
+  display: flex;
+}
+
+.footer-column form input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.footer-column form button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #00aced;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #444;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.social-media a {
+  margin: 0 15px;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+
+/* Tablet and 1024px screen responsiveness */
+@media (max-width: 1024px) {
+  /* Adjust column layout to better fit the screen */
   .footer-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 30px; /* Increase padding for better spacing */
   }
-  
+
   .footer-column {
-    flex: 1;
-    min-width: 220px;
-    margin: 20px 0;
+      margin: 15px 0; /* Reduce margin for better vertical alignment */
+      max-width: 90%; /* Adjust width for better fit */
+      text-align: center; /* Center align text */
   }
-  
+
   .footer-column h4 {
-    font-size: 18px;
-    margin-bottom: 20px;
+      font-size: 16px; /* Slightly reduce heading size */
   }
-  
-  .footer-column ul {
-    list-style: none;
-    padding: 0;
-  }
-  
+
   .footer-column ul li {
-    margin-bottom: 10px;
+      margin-bottom: 8px; /* Reduce space between items */
   }
-  
-  .footer-column ul li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  .footer-column ul li a:hover {
-    color: #00aced;
-  }
-  
-  .social-media li {
-    display: inline-block;
-    margin-right: 15px;
-  }
-  
-  .social-media li a {
-    display: flex;
-    align-items: center;
-  }
-  
-  .social-media li a i {
-    margin-right: 8px;
-    font-size: 16px;
-  }
-  
-  .footer-column form {
-    display: flex;
-  }
-  
+
   .footer-column form input {
-    flex: 1;
-    padding: 10px;
-    border: none;
-    border-radius: 5px 0 0 5px;
+      padding: 8px; /* Adjust padding for smaller screen */
   }
-  
+
   .footer-column form button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #00aced;
-    color: #fff;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
+      padding: 8px 15px; /* Adjust button size */
   }
-  
+
+  /* Adjust social media icons */
+  .social-media {
+      text-align: center;
+  }
+
+  .social-media li {
+      margin-right: 10px; /* Reduce space between icons */
+  }
+
+  .social-media li a i {
+      font-size: 14px; /* Slightly reduce icon size */
+  }
+
   .footer-bottom {
-    text-align: center;
-    padding: 20px 0;
-    border-top: 1px solid #444;
-    margin-top: 20px;
+      padding: 15px 0; /* Adjust padding */
   }
-  
-  .footer-bottom p {
-    margin: 0;
+}
+
+/* Smaller screen responsiveness (768px and below) */
+@media (max-width: 768px) {
+  .footer-container {
+      padding: 0 20px;
   }
-  
+
+  .footer-column {
+      flex: 1 1 100%;
+      max-width: 100%; /* Full width on smaller screens */
+      text-align: center;
+  }
+
+  .footer-column h4 {
+      font-size: 15px;
+  }
+
+  .footer-column ul li {
+      margin-bottom: 6px;
+  }
+
+  .social-media {
+      text-align: center;
+  }
+
+  .social-media li {
+      margin-right: 5px;
+  }
+
+  .footer-bottom {
+      padding: 10px 0;
+  }
+}

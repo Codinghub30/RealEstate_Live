@@ -2,53 +2,53 @@ import React from "react";
 import "./css/Featured.css";
 import Slider from "react-slick";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
 
 const Featured = () => {
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        responsive: [
-          {
-            breakpoint: 1200,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 1,
-              infinite: true,
-              dots: true
-            }
-          },
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-              infinite: true,
-              dots: true
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]
-      };
-    
-      const properties = [
-        { price: "₹1.30 Cr", size: "1304 sqft", location: "Doddaballapur Main Road, Bangalore", bhk: "2 BHK" },
-        { price: "₹80 Lac", size: "1140 sqft", location: "Panathur, Bangalore", bhk: "2 BHK" },
-        { price: "₹2.78 Cr", size: "1693 sqft", location: "Dodda Nekkundi Extension, Kartik Nagar, Bangalore", bhk: "3 BHK" },
-        { price: "₹1.05 Cr", size: "1275 sqft", location: "Bellandur, Outer Ring Road, Bangalore", bhk: "2 BHK" },
-        // Add more properties as needed
-      ];
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+
+  const properties = [
+    { price: "₹1.30 Cr", size: "1304 sqft", location: "Doddaballapur Main Road, Bangalore", bhk: "2 BHK" },
+    { price: "₹80 Lac", size: "1140 sqft", location: "Panathur, Bangalore", bhk: "2 BHK" },
+    { price: "₹2.78 Cr", size: "1693 sqft", location: "Dodda Nekkundi Extension, Kartik Nagar, Bangalore", bhk: "3 BHK" },
+    { price: "₹1.05 Cr", size: "1275 sqft", location: "Bellandur, Outer Ring Road, Bangalore", bhk: "2 BHK" },
+    // Add more properties as needed
+  ];
 
   return (
     <div className="main">
@@ -57,10 +57,10 @@ const Featured = () => {
       </h2>
       <div className="seeAll1">
         <Link to="/services">
-        
-        <button>See all services ^</button>
+
+          <button>See all services ^</button>
         </Link>
-        </div>
+      </div>
       <div className="button-container">
         <div className="button-line"></div>
       </div>
@@ -106,31 +106,8 @@ const Featured = () => {
         </div>
       </div>
 
-      <div className="popular">
-        <h2>Popular properties in <span className="bbsr">BBSR</span> at <span className="l">L</span>ow price</h2>
-        <div className="card-carousel">
-        <div className="button-line-2"></div>
-        <div className="seeAll">
-        <button>See all properties ^</button>
-        </div>
-        
-             <Slider {...settings}>
-        {properties.map((property, index) => (
-          <div key={index} className="card">
-            <div className="card-image"></div>
-            <div className="card-details">
-              <h2>{property.bhk} Flat</h2>
-              <p>{property.price}</p>
-              <p>{property.size}</p>
-              <p>{property.location}</p>
-            </div>
-          </div>
-        ))}
-      </Slider>
 
 
-        </div>
-      </div>
     </div>
   );
 };

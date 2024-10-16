@@ -71,6 +71,8 @@
     background-position: center;
     display: flex;
     align-items: flex-end;
+    text-align: center;
+    justify-content: baseline;
     color: #fff;
     text-align: center;
 }
@@ -95,6 +97,8 @@
 }
 
 .card-title-initial {
+    text-shadow: 5px 2px 4px black;
+    text-align: center;
     z-index: 1;
     margin: 0;
     font-size: 1.5em;
@@ -136,6 +140,7 @@
 
     .feature-container {
         display: flex;
+        flex-direction: column;
         margin-top: 5%;
     }
     

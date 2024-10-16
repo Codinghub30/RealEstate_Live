@@ -1,79 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&family=Fira+Code:wght@400;700&display=swap');
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;700&display=swap');
 
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #fff;
+    font-family: 'Open Sans', sans-serif; /* Body font */
+    font-size: 16px; /* Base font size */
+    line-height: 1.5; /* Improved readability */
+    color: #333; /* Text color */
 }
 
-header {
-  /* background-color: transparent; Light gray background */
-  background-color: #1514143d; /* Dark text color */
-  padding: 0.5rem 1rem;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1000;
+
+
+a {
+    color: #007BFF; /* Link color */
+    text-decoration: none; /* Remove underline */
 }
 
-.logo img{
-  width: 6%;
-  border-radius: 32px
+a:hover {
+    text-decoration: underline; /* Underline on hover for clarity */
 }
 
-.container-navbar {
-  display: flex;
-  padding: 0px;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.logo a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.5rem;
-}
-
-.navigation {
-  /* display: none; */
-  /* align-items: center; */
-  margin-left: 100px;
-    margin-top: 0px;
-
-  flex: 1; /* Ensure it takes up available space */
-  justify-content: center; /* Center the nav items */
-}
-
-.nav-list {
-  display: flex;
-  list-style: none;
-  /* margin: 0; */
-  padding: 0;
-  gap: 12%;
-  margin-left: -125%;
- 
-}
-
-.nav-item {
-  margin-left: 1.5rem;
-  margin-top: 16px;
-}
-
-.nav-item a {
-  color: white;
-  font-size: 18px;
-  text-decoration: none;
-  /* font-size: 1.4rem; */
-}
-.nav-item a:hover{
-  padding: 8px 10px;
-   /* color: red; */
-   background-color: #493b3b29;
-   border-radius: 40px;
-
-}
-
+/* 
 .menu-icon {
   display: none;
   flex-direction: column;
@@ -87,15 +34,15 @@ header {
   height: 4px;
   margin: 4px 0;
   width: 25px;
-}
+} */
 
 
 
 .text-front{
   position: absolute;
   color: white;
-  top: 18%;
-  left: 20%;
+  top: 27%;
+  left: 19%;
   font-size: 6rem;
 
 }
@@ -108,6 +55,7 @@ header {
   position: relative;
   display: flex;
   align-items: center;
+  margin-top: -9%;
 }
 
 .main-img {
@@ -123,7 +71,7 @@ header {
 .search-container {
   position: absolute;
   top: 70%;
-  left: 2%;
+  left: 25%;
   display: flex;
   border-radius: 10px;
   border: none;
@@ -218,76 +166,193 @@ header {
 }
 
 /* Responsive Styles */
+
+
+.mainInfo{
+  
+  margin-left:10%;
+  margin-top: 10%;
+}
+.mainInfo2{
+
+  margin-left:30%;
+  /* margin-top: 10%; */
+}
+.mainInfo3{
+  /* style={{marginLeft: "10%", marginTop:"16%"}} */
+  margin-top: 16%;
+  margin-left: 10%;
+
+}
+.mainInfo3 .para3{
+  /* style={{marginRight: "71%" }} */
+  margin-right: 71%;
+}
+
+
+
+
+@media (max-width: 992px) {
+  .seeAll1 button {
+    right: 5%;
+    margin-top: 2%;
+}
+  
+.mainInfo{
+
+  margin-left:10%;
+  margin-top: 10%;
+}
+.commitment-img{
+  width: 85vw;
+}
+.mainInfo2{
+
+  text-align: center;
+  margin-left:0%;
+  /* margin-top: 10%; */
+}
+.mainInfo2{
+
+  text-align: center;
+ 
+}
+
+  .exp{
+    width: 85%;
+  }
+  .real{
+    width: 85%;
+
+  }
+  .mainInfo .para1{
+
+    margin-right: 4%;
+    margin-bottom: 72px;
+    margin-top: 14px;
+  }
+  .mainInfo3 .para3{
+
+    margin-right: 9%;
+  }
+    .text-front {
+      font-size: 4rem;
+      top: 24%;
+      left: 37px;
+    }
+
+    .search {
+        width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+  
+  .exp{
+    width: 85%;
+  }
+  .real{
+    width: 85%;
+
+  }
+    .main-img {
+      margin-top: -53px;
+        height: 75vh;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .text-front {
+      font-size: 4rem;
+      top: 24%;
+      left: 37px;
+    }
+
+    .search-container {
+        left: 10%;
+    }
+
+    .search {
+        width: 250px;
+    }
+
+    .location {
+        width: 120px;
+    }
+}
+
+@media (max-width: 576px) {
+  .exp{
+    width: 85%;
+  }
+  .real{
+    width: 85%;
+
+  }
+    .text-front {
+      font-size: 4rem;
+      top: 24%;
+      left: 37px;
+    }
+
+    .search-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-input,
+    .location-input {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .search {
+        width: 200px;
+    }
+
+    .location {
+        width: 100px;
+    }
+}
+
+
 @media (max-width: 868px) {
-  .nav-list{
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    padding: 0;
-    gap: 12%;
-    width: 94%;
-    margin-left: -3%;
+
+  /* Search and Location Input Fields */
+  .search-input,
+  .location-input {
+    margin-left: 0;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
   }
 
-  .nav-item{
-    border: 1px solid black;
-    text-align: center;
-  }
-  
-  .nav-item a{
-    
-    color: black;
-   
-  }
-  .navigation {
-    display: none; /* Hide by default */
-  }
-  
-  .nav-active {
-    display: flex; /* Show when active */
-    flex-direction: column;
-    position: absolute; /* Position it as needed */
-    top: 100%; /* Adjust to fit your layout */
-    left: -94px;
-    background-color: #f8f9fa; /* Background color */
-    width: 100%; /* Full width */
-    z-index: 1000; /* Ensure it’s on top of other elements */
-  }
-  
-  .menu-icon {
-    display: flex; /* Ensure it's visible */
-    flex-direction: column;
-    cursor: pointer;
-  }
-  
-  .menu-icon span {
-    background: #333;
-    border-radius: 2px;
-    display: block;
-    height: 4px;
-    margin: 4px 0;
-    width: 25px;
+  /* Search Container */
+  .search {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
   }
 
+  /* Text Styling inside the container */
   .container {
-    position: relative; /* Make the container a positioning context */
+    position: relative;
+    text-align: left;
   }
+
   .text {
     position: absolute;
     color: white;
-    top: 21%;
+    top: 20%;
     left: 5%;
-    font-size: 54px;
-}
-.search-input, .location-input {
-
-  margin-left: -90px;
-}
-
-.search {
-  width: 200px;
-  height: 55pxu
-}
+    font-size: 48px;
+    font-weight: 700;
+  }  
 .card-container {
   display: flex;
    margin-left: 0%;
@@ -352,11 +417,5 @@ header {
   margin-left: 10%;
   width: 68%;
 }
-/* .commitment-img {
-  position: absolute;
-  width: 86%;
-  left: 64%;
-  margin-top: -18%;
-  margin-left: -56%;
-} */
+
 }
