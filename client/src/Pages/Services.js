@@ -149,7 +149,7 @@ const Services = () => {
       {/* </div> */}
 
       <div className="service-main-container">
-        {filteredServices > 0 ? <h5>{filteredServices.length} Results | Flats in Odisha</h5> : }
+        {filteredServices > 0 ? <h5>{filteredServices.length} Results | Flats in Odisha</h5> : '' }
         <div className="filter-container">
           <div className="filter-sidebar">
             <h3>Filters</h3>
