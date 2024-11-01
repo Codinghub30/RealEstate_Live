@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Header from "../Component/Header";
-import mainImg from "../Component/Images/about.jpg";
+import mainImg from "../Component/Images/aboutGif.gif";
 import Slider from "react-slick";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "slick-carousel/slick/slick.css";
@@ -18,7 +18,8 @@ import Image5 from '../Component/Images/img6.jpg';
 import { FaSearch } from 'react-icons/fa';
 import Loader from '../Component/Loading';
 import { useDispatch, useSelector } from "react-redux";
-import { startLoading, stopLoading, selectLoading } from "../redux/loadingSlice";
+import { startLoading, stopLoading, selectLoading } from "../redux/slice/loadingSlice";
+import HandshakeRoundedIcon from '@mui/icons-material/HandshakeRounded';
 const About = () => {
   const [isLoading, setIsLoading] = useState(false);
   const dispatch = useDispatch();
@@ -54,6 +55,22 @@ const About = () => {
     // Add more properties as needed
   ];
 
+  const values = [
+    { title: 'Value 1', description: 'Short description about value' },
+    { title: 'Value 2', description: 'Short description about value' },
+    { title: 'Value 3', description: 'Short description about value' },
+    { title: 'Value 4', description: 'Short description about value' },
+    { title: 'Value 5', description: 'Short description about value' },
+    { title: 'Value 6', description: 'Short description about value' },
+  ];
+  
+  const items = [
+    { id: 1, text: ' Our experienced team offers personalized support and market insights to help you make informed decisions, whether you’re buying, selling, or investing.' },
+    { id: 2, text: 'We believe in building strong relationships and contributing positively to the neighborhoods we serve, ensuring a lasting impact.' },
+    { id: 3, text: 'Every client is unique. We take the time to understand your individual needs, providing customized strategies that align with your real estate goals.' },
+  ];
+  
+
   useEffect(() => {
 
     setIsLoading(true);
@@ -61,7 +78,7 @@ const About = () => {
     const timer = setTimeout(() => {
       dispatch(stopLoading());
       setIsLoading(false);
-    }, 1000); // Simulating a 2-second loading time
+    }, 1000); 
     console.log("loading");
 
 
@@ -77,13 +94,13 @@ const About = () => {
           <img src={mainImg} className="" alt="Main" />
 
         </div>
-        <div className="Main-content1">
-          <h3>Smart Investments </h3>
-        </div>
+          {/* <div className="Main-content1">
+            <h3>Smart Investments </h3>
+          </div>
 
-        <div className="Main-content2">
-          <h3>for a Brighter Future</h3>
-        </div>
+          <div className="Main-content2">
+            <h3>for a Brighter Future</h3>
+          </div> */}
 
 
         <div className="secondary">
@@ -105,15 +122,51 @@ const About = () => {
           {/* <About_Slider /> */}
         </div>
 
-        <div className="value">
+        {/* <div className="value">
           <img src={joinImg} alt="Join Image Not found" />
+          <HandshakeRoundedIcon />
           <div className="content-value">
             <h2>Values</h2>
+            <HandshakeRoundedIcon />
             <p>Join us and be part of a forward-thinking team that values collaboration, creativity, and innovation. We celebrate diversity, encouraging each member to bring their unique perspective and expertise to the table. Together, we foster a culture of learning, mutual respect, and continuous improvement. Your contributions will help us push boundaries, overcome challenges, and achieve great things, all while growing both personally and professionally!</p>
             {/* <button>Join our team</button> */}
-          </div>
+          {/* </div> */}
 
-        </div>
+        {/* // </div> */} 
+        <div className="values-section">
+      <h2>Our Values</h2>
+      <p>Each value represents our commitment to providing high-quality service and upholding the highest standards.</p>
+      
+      <div className="values-grid">
+        {values.map((value, index) => (
+          <div className="value-card" key={index}>
+            <div className="value-content">
+              <h3>{value.title}</h3>
+              <p>{value.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="values-overlay"></div>
+
+
+</div>
+
+<div className="design-section">
+      <h1>
+        <span className="highlight">Your Trusted</span> Partner in Real Estate
+      </h1>
+      
+      <div className="design-items">
+        {items.map((item) => (
+          <div className="design-item" key={item.id}>
+            <div className="item-number">{`0${item.id}`}</div>
+            <p>{item.text}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+
 
         <div className="aboutInfo">
           <div className="moreInfo">
@@ -165,13 +218,22 @@ const About = () => {
 
         </div>
 
+<div className="gallery-container">
+  
+</div>
+<div className="last-img-container">
+  <h4>Image Gallery</h4>
+  
         <div className="last-img" >
+
           <img src={Image1} alt="Not found" />
           <img src={Image3} alt="Not found" />
           <img src={Image4} alt="Not found" />
           <img src={Image5} alt="Not found" />
         </div>
 
+
+        </div>
         <Footer />
       </div>
       );

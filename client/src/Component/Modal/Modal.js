@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from "react";
+import CabinIcon from '@mui/icons-material/Cabin';
+import DynamicFeedRoundedIcon from '@mui/icons-material/DynamicFeedRounded';
+import SquareFootRoundedIcon from '@mui/icons-material/SquareFootRounded';
 import "./App.css";
 
 const Modal = ({ service, closeModal }) => {
@@ -33,12 +36,17 @@ const Modal = ({ service, closeModal }) => {
       <div className="modal-content" style={{ width: `${modalWidth}px` }}>
         <h2>{service?.title}</h2>
         <p>{service?.details}</p>
-        <img src={service?.img} alt={service?.title} className="modal-image" />
-        <button className="close-btn" onClick={closeModal}>
-          Close
-        </button>
-      </div>
-    </div>
+        <p className="card-text-size"> <SquareFootRoundedIcon /> Area: {service?.size}</p>
+        <p className="card-text-tyepe"><CabinIcon />Type: {service?.type}</p>
+  
+      <p className="card-text-flatSq"> {service?.flatSq}</p>
+      {/* <p className="card-text-posted"><DynamicFeedRoundedIcon />  Posted By: {service?.Postedby}</p> */}
+      <img src={service?.img} alt={service?.title} className="modal-image" />
+      <button className="close-btn" onClick={closeModal}>
+        Close
+      </button>
+  </div>
+    </div >
   );
 };
 

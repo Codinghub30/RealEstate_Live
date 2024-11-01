@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "../Component/Header";
-import img from "../Component/Images/career.jpg";
 import img1 from "../Component/Images/img1.jpg";
 import Money from "../Component/Images/money.png";
 import Health from "../Component/Images/Health.png";
@@ -10,8 +9,7 @@ import Integrity from "../Component/Images/Integrity.png";
 import Innovative from "../Component/Images/Innovative.png";
 import Teamwork from "../Component/Images/Teamwork.png";
 import Usercetric from "../Component/Images/Usercetric.png";
-import { RiDoubleQuotesL } from "react-icons/ri";
-import { RiDoubleQuotesR } from "react-icons/ri";
+import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
 import "../Component/css/Career.css";
 import Footer from "../Component/Footer";
 
@@ -21,15 +19,20 @@ const Career = () => {
       <Header />
       <div className="container-career">
         <div className="main-Img">
-       
           <div className="career-overlay-text">Join Our Team!</div>
         </div>
         <div className="life">
           <h2>Life At #MPC</h2>
           <p>
-          <RiDoubleQuotesL style={{fontSize:"26px", marginTop:"-36px"}} />
-          At MPC Real Estate, supporting our employees is a core part of how we do business. We believe in fostering a wholesome individual and team balance, emphasizing absolute autonomy at all levels while celebrating the process of achieving both individual and group goals. We take pride in our supportive and inclusive culture that nurtures the creative side of our employees. Therefore, we encourage engagement in de-stressing and rejuvenating activities at work.
-            <RiDoubleQuotesR  style={{fontSize:"26px", marginTop:"10px"}}  />
+            <RiDoubleQuotesL style={{ fontSize: "26px", marginTop: "-36px" }} />
+            At MPC Real Estate, supporting our employees is a core part of how
+            we do business. We believe in fostering a wholesome individual and
+            team balance, emphasizing absolute autonomy at all levels while
+            celebrating the process of achieving both individual and group
+            goals. We take pride in our supportive and inclusive culture that
+            nurtures the creative side of our employees. Therefore, we encourage
+            engagement in de-stressing and rejuvenating activities at work.
+            <RiDoubleQuotesR style={{ fontSize: "26px", marginTop: "10px" }} />
           </p>
           <img src={img1} alt="Not Found" />
         </div>
@@ -64,9 +67,9 @@ const Career = () => {
         <div className="core">
           <h2 className="core-heading">Our Core Values</h2>
           <p className="core-para">
-            At MPC, our goal is to turn transactions into life changing
-            experiences. We thus strive to constantly better ourselves through
-            self-reflection and keep our ethos as the foundation of our conduct
+            At MPC, our goal is to turn transactions into life-changing
+            experiences. We strive to constantly better ourselves through
+            self-reflection and keep our ethos as the foundation of our conduct.
           </p>
           <div className="icons">
             <div className="icon-item">
@@ -75,11 +78,11 @@ const Career = () => {
             </div>
             <div className="icon-item">
               <img src={Innovative} alt="not found" />
-              <h2>Innovativity</h2>
+              <h2>Innovation</h2>
             </div>
             <div className="icon-item">
               <img src={Teamwork} alt="not found" />
-              <h2>Team Work</h2>
+              <h2>Teamwork</h2>
             </div>
             <div className="icon-item">
               <img src={Usercetric} alt="not found" />
@@ -89,7 +92,7 @@ const Career = () => {
         </div>
       </div>
       <section className="career-form-section">
-        <h2>Fill the Details</h2>
+        <h2>Fill in Your Details</h2>
         <form className="career-form">
           <label htmlFor="name">Name:</label>
           <input type="text" id="name" name="name" required />
@@ -106,10 +109,11 @@ const Career = () => {
           <label htmlFor="message">Message:</label>
           <textarea id="message" name="message" rows="5" required></textarea>
 
-          <button className='submit-button-career' type="submit">Submit</button>
+          <button className="submit-button-career" type="submit">
+            Submit
+          </button>
         </form>
       </section>
-
       <Footer />
     </div>
   );

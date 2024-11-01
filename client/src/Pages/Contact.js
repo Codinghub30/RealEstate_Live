@@ -3,14 +3,22 @@ import '../Component/css/Contact.css';
 import Header from "../Component/Header"
 import contactImg from "../Component/Images/contact.png"
 import joinImg from "../Component/Images/office.jpg"
+import customer from "../Component/Images/customerPage.png"
 import Loader from '../Component/Loading';
 import { useDispatch, useSelector } from "react-redux";
-import { startLoading, stopLoading,selectLoading } from "../redux/loadingSlice"; 
+import { startLoading, stopLoading,selectLoading } from "../redux/slice/loadingSlice"; 
 import { useEffect, useState } from 'react';
 
 const Contact = () => {
   const [isLoading, setIsLoading] = useState(false);
   const dispatch = useDispatch();
+
+  const items = [
+    { id: 1,  heading:' Get in Touch', text: 'We’re here to help! Whether you have a question about our services or need assistance, feel free to reach out.' },
+    { id: 2,  heading:'Visit Us', text: ' Come and visit us at our headquarters! Located in the heart of the city, our office is open to clients and visitors alike.' },
+    { id: 3,  heading:'Stay Connected',   text: ' Join our community on social media! Follow us on our social platforms to stay updated on our latest news, services, and promotions. ' },
+  ];
+
   useEffect(() => {
     
     setIsLoading(true);
@@ -25,6 +33,8 @@ const Contact = () => {
     return () => clearTimeout(timer); // Cleanup the timer
   }, [dispatch]);
 
+  
+
   return (
     <div className="container-contact">
       { isLoading && <Loader />}
@@ -36,7 +46,7 @@ const Contact = () => {
       {/* <img className='Contact-img' src={joinImg}  alt='not found'  /> */}
 
       <div className='Contact-img'>
-      <div className="overlay-text">Building a better tomorrow.</div>
+      <div className="overlay-text-contact">Building a better tomorrow.</div>
       </div>
 
       <div className="contact-info">
@@ -59,6 +69,26 @@ const Contact = () => {
         </div>
       </div>
 
+<div className="design-section">
+      <h1>
+        <span className="highlight">We are</span> here to help you
+      </h1>
+      <div className='design-container'>
+   
+            <div className="design-items">
+            {items.map((item) => (
+              <div className="design-item" key={item.id}>
+                {/* <h2>{item.heading}</h2> */}
+                <div className="item-number">{`0${item.id}`}</div>
+                <p>{item.text}</p>
+              </div>
+            ))}
+          </div>
+          <img className='design-image' src={customer} alt='customer'  />
+      </div>
+  
+    </div>
+    
       <section className="contact-form-section">
         <h2>Send Us a Message</h2>
         <form className="contact-form">

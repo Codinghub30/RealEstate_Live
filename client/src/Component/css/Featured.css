@@ -26,7 +26,7 @@
 
 .highlight {
   font-size: 4.2rem;
-  color: rgba(66, 66, 190, 0.824);
+  color: #003366;
 }
 
 /* Button Lines */
@@ -36,7 +36,7 @@
   margin-top: -10px;
   width: 70px;
   height: 4px;
-  background-color: rgba(66, 66, 190, 0.824);
+  background-color: #003366;
 }
 
 .button-line {
@@ -166,6 +166,11 @@
   right: -60px;
 }
 
+@media (min-width: 1500px){
+  .button-line {
+    left: 45%;
+  }
+}
 /* Responsive Styling */
 @media (max-width: 850px) {
   .card-container {

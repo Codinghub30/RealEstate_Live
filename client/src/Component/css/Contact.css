@@ -23,7 +23,7 @@ body {
   }
 
 
-  .overlay-text {
+  .overlay-text-contact {
     position: absolute;
     bottom: 30%;
     left: 40%;
@@ -82,13 +82,65 @@ body {
   font-size: 16px;
   margin: 0;
 }
+.design-section {
+  text-align: left;
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+}
+
+.design-section h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.design-section .highlight {
+   color:#003366; /* Orange color for the highlighted "We design" text */
+  font-weight: bold;
+}
+
+.design-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 54%;
+}
+
+.design-item {
+  display: flex;
+  align-items: center;
+  background-color: #003366; /* Orange background */
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item-number {
+  background-color: white;
+  color:#003366;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.design-image{
+  position: relative;
+  width: 37vw;
+  margin-left: 56%;
+  margin-top: -38%;
+  height: 99vh;
+  z-index: -1;
+}
 
 /* Contact Form Section */
 .contact-form-section {
   background-color: white;
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin: 40px 0;
+  margin: -21px 0;
   border-radius: 8px;
 }
 
@@ -152,7 +204,25 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+@media (min-width: 1500px){
+  .overlay-text {
+    font-size: 8rem;
+  }
+}
+
 @media (max-width: 768px) {
+  .design-image {
+    position: relative;
+    width: 75vw;
+    margin-left: 18px;
+    margin-top: -78px;
+    z-index: -1;
+}
+
+.design-items {
+
+  width: 103%;
+}
   .overlay-text {
     position: absolute;
     bottom: 32%;

@@ -3,13 +3,14 @@
 .feature-heading {
     margin-top: 8%;
     margin-left: -1%;
-    font-size: 1.5rem; /* Size of the heading */
-    font-weight: 600; /* Make the text bold */
-    color: #333; /* Dark color for the text */
+    font-size: 32px; /* Size of the heading */
+    font-weight: 600;
+    color: #003366; /* Dark color for the text */
     text-align: center; /* Center the heading */
     margin-bottom: 20px; /* Space below the heading */
     text-transform: uppercase; /* Make the text uppercase */
     letter-spacing: 1px; /* Space between letters */
+    line-height: 1.3;
 }
 
 .button-section {
@@ -123,6 +124,12 @@
     background-color: #0056b3;
 }
 
+@media (min-width: 1500px){
+    .button-section {
+       
+        margin-left: 32%;
+    }
+}
 
 @media (max-width: 800px){
     .button-section {

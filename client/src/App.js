@@ -3,6 +3,7 @@ import Feature from './Component/Feature';
 import About from './Pages/About';
 import Career from './Pages/Career';
 import Contact from './Pages/Contact';
+import Dashboard from './Pages/Dashboard';
 import FAQ from './Pages/Faq';
 import Home from './Pages/Home';
 import Services from './Pages/Services';
@@ -19,6 +20,7 @@ function App() {
         <Route path="/services"  element={<Services/>} /> 
         {/* <Route path={`/SinglePage/:index`}  element={<About />} />  */}
         <Route path={`/contact`}  element={<Contact />} /> 
+        <Route path={`/dashboard`}  element={<Dashboard />} /> 
         <Route path={`/feature`}  element={<Feature />} /> 
         <Route path={`/career`}  element={<Career />} /> 
         <Route path={`/faq`}  element={<FAQ />} /> 

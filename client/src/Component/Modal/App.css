@@ -40,9 +40,9 @@
   }
   
   .modal-image {
-    max-width: 100%;
+    max-width: 72%;
     height: auto;
-    margin: 15px 0;
+    margin: 15px 45px;
   }
   
   /* Responsive design */
